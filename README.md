@@ -12,7 +12,10 @@ CaptionCraft is an AI-powered tool for generating engaging and age-appropriate p
 - Attractive UI: UI which engages the audience
 
 ## Tech Stack
-Python: Core programming language.
-LangChain: Framework for managing and structuring prompts for language models.
-OpenAI API: LLM backend for generating content.
-Visual studio code: Used for development and testing
+- Python: Core programming language.
+- LangChain: Framework for managing and structuring prompts for language models.
+- OpenAI API: LLM backend for generating content.
+- Visual studio code: Used for development and testing
+
+## Contributing
+Feel free to contribute by submitting issues, feature requests, or pull requests.
