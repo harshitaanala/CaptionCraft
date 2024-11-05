@@ -3,11 +3,12 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain import FewShotPromptTemplate
 from langchain.prompts.example_selector import LengthBasedExampleSelector
+from langchain_community.chat_models import ChatOpenAI
 
 import os
 os.environ["OPENAI_API_KEY"] = "sk-proj-XGrod-RYisqmhfcI7SQ6fukWZ3at8SpUfN716"
 
-llm = OpenAI(temperature=.9, model="text-davinci-003")
+llm = ChatOpenAI(temperature=.9, model="text-davinci-003")
 
 examples = [
     {
@@ -76,4 +77,4 @@ new_prompt_template = FewShotPromptTemplate(
 query = "What is a house?"
 print(new_prompt_template.format(userInput=query))
 
-print(llm(new_prompt_template.format(userInput=query)))
+print(llm.invoke(new_prompt_template.format(userInput=query)))
